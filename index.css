@@ -113,7 +113,8 @@ h2 {
     background-color: #0056b3;
 }
 
-/* Advanced Responsive Media Queries */
+
+/* Advanced Responsive Media Queries (Mobile Fixes) */
 @media (max-width: 768px) {
     .features-container {
         flex-direction: column;
@@ -122,23 +123,31 @@ h2 {
     .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td {
         display: block;
         width: 100%;
+        box-sizing: border-box; /* This stops the box from breaking */
     }
     
     .pricing-table thead {
         display: none;
     }
     
+    .pricing-table tr {
+        margin-bottom: 15px;
+        border: 2px solid #e0e0e0;
+    }
+    
     .pricing-table td {
-        text-align: right;
-        padding-left: 50%;
+        text-align: left; 
+        padding: 12px;
         position: relative;
+        border: none;
+        border-bottom: 1px solid #eeeeee;
     }
     
     .pricing-table td::before {
         content: attr(data-label);
-        position: absolute;
-        left: 10px;
+        display: block; /* Stacks the label above the text */
         font-weight: bold;
-        text-align: left;
+        color: #0056b3;
+        margin-bottom: 5px;
     }
 }
