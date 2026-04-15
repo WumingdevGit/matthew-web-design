@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew O. - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <img src="img/my_image.jpg" alt="Matthew's Profile Picture" class="profile-img">
+        <h1>Matthew Oluwanifemi Ogunremi</h1>
+        <p>Frontend Web Designer</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="section-card">
+            <h2>Why Choose My Services?</h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <h3>Responsive Design</h3>
+                    <p>Looks fantastic on mobile, tablet, and desktop.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fast Loading</h3>
+                    <p>Optimized for quick user access and lower data usage.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Clean Code</h3>
+                    <p>Built perfectly using modern web standards.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card">
+            <h2>Pricing Plans</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Service Plan</th>
+                        <th>Features Included</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Service Plan">Basic Design</td>
+                        <td data-label="Features">1 Page, Mobile Friendly, Contact Form</td>
+                        <td data-label="Price">₦150,000</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Service Plan">Standard Design</td>
+                        <td data-label="Features">3 Pages, Basic SEO, Social Media Integration</td>
+                        <td data-label="Price">₦250,000</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Service Plan">Premium Design</td>
+                        <td data-label="Features">5 Pages, Custom Layouts, CMS Integration</td>
+                        <td data-label="Price">₦400,000</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Service Plan">E-Commerce</td>
+                        <td data-label="Features">Full Store, Payment Gateway</td>
+                        <td data-label="Price">₦750,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section-card">
+            <h2>Request a Quote</h2>
+            <form action="/submit" method="POST" class="contact-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="e.g., Matthew O." required>
+                
+                <label for="service">Select Service Required:</label>
+                <select id="service" name="service">
+                    <option value="basic">Basic Design (₦150,000)</option>
+                    <option value="standard">Standard Design (₦250,000)</option>
+                    <option value="premium">Premium Design (₦400,000)</option>
+                    <option value="ecommerce">E-Commerce (₦750,000)</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Send Request</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Matthew Oluwanifemi Ogunremi. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
